@@ -1,0 +1,18 @@
+.greeting {
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #a8e601;
+    width: 350px;
+}
+
+.button {
+    background-color: #a898d3;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.errorMessage {
+    color: red;
+}

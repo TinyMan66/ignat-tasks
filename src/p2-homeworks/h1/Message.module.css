@@ -1,0 +1,48 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    background-color: #a8e600;
+    width: 300px;
+
+}
+
+.picture{
+    margin: 0 0 5px 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.content{
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    background-color: #002200;
+}
+
+.angel{
+    margin: 0 0 5px 0;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 15px, #002200 0) ;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #a898d3;
+}
+
+.textMessage{
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+    color: #b7beac;
+}
+
+.time{
+    display: flex;
+    justify-content: flex-end;
+    color: #1a3d1b;
+}
+/*//background-color: #a8e600;*/
