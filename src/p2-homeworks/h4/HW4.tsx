@@ -9,7 +9,7 @@ function HW4() {
     const error = text ? '' : 'error'
 
     const showAlert = () => { //refactoring
-        error ? alert('введите текст...') : alert(text);
+        error ? alert('Delete .. ?') : alert(text);
 
         // if (error) {
         //     alert('введите текст...')
