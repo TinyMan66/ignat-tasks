@@ -1,0 +1,9 @@
+.span {
+    color: #3498da;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.buttons {
+    display: flex;
+}
