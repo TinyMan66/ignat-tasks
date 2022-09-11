@@ -1,0 +1,12 @@
+.buttons {
+    display: flex;
+}
+
+.time {
+    color: #409bda;
+    padding-left: 20px;
+}
+.date {
+    color: #409bda;
+    padding-left: 20px;
+}
