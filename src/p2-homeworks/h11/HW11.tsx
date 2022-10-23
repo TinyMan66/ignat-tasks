@@ -6,6 +6,13 @@ function HW11() {
     const [value1, setValue1] = useState(0)
     const [value2, setValue2] = useState(100)
 
+    const onChangeSuperRange = (valueS: number[]) =>  {
+        setValue1(valueS[0]);
+        setValue2(valueS[1]);
+    }
+
+    const style = {paddingLeft: "10px"};
+
     return (
         <div>
             <hr/>
@@ -13,18 +20,22 @@ function HW11() {
 
             {/*should work (должно работать)*/}
             <div>
-                <span>{value1}</span>
+                <span style={style}>{value1}</span>
                 <SuperRange
+                    value={value1}
+                    onChangeRange={setValue1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
 
             <div>
-                <span>{value1}</span>
+                <span style={style}>{value1}</span>
                 <SuperDoubleRange
+                    value={[value1, value2]}
+                    onChangeRange={onChangeSuperRange}
                     // сделать так чтоб value1 и value2 изменялось
                 />
-                <span>{value2}</span>
+                <span style={style}>{value2}</span>
             </div>
 
             <hr/>
