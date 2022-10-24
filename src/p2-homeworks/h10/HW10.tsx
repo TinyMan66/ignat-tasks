@@ -1,9 +1,10 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import preloader from './images/preloader.gif'
-import {useDispatch, useSelector} from "react-redux";
-import {AppStoreType} from "./bll/store";
-import {loadingAC} from "./bll/loadingReducer";
+import {useDispatch, useSelector} from 'react-redux';
+import {AppStoreType} from './bll/store';
+import {loadingAC} from './bll/loadingReducer';
+import styles from './HW10.module.css'
 
 function HW10() {
     const isLoading =  useSelector<AppStoreType, boolean>(state => state.loading.isLoading);
@@ -18,7 +19,7 @@ function HW10() {
     };
 
     return (
-        <div>
+        <div className={styles.main}>
             <hr/>
             homeworks 10
 

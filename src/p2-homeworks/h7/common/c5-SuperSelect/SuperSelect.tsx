@@ -16,7 +16,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 ) => {
     const mappedOptions: any[] = options ? options.map((op, index) => (
         <option key={index}>
-            <div>{op}</div>
+            {op}
         </option>)) : [] ; // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -33,3 +33,5 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 }
 
 export default SuperSelect
+
+{/*<div>{op}</div> code line 19 was a warning: "<div> cannot appear as a child of <option>"! */}
